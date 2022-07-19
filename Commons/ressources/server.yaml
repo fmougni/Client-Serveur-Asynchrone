@@ -1,0 +1,18 @@
+name: string
+configurations: list
+  server: object
+    name: string
+    port: int
+    password: string
+    max-connections: int
+    timeout: int
+    game: ref(id)
+games: list
+  game: object
+    id: string
+    max-players: int
+    caves: int
+    cards-quantity: int
+    traps: list
+      name: string
+      quantity: int
